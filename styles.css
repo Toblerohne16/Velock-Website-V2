@@ -452,7 +452,7 @@ main {
   align-items: center;
 }
 
-#abstellstationen_ende img {
+#abstellstationen_ende video {
   width: 150px;
   margin: 3%;
 }
@@ -467,7 +467,6 @@ main {
   align-items: center;
   padding: 10%;
   gap: 20px;
-
   background-color: #efeef5;
 }
 
