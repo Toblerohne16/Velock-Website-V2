@@ -479,7 +479,7 @@ main {
   border: 0 solid;
 }
 
-/* Vorder- und Rückseite der Flipcard positionieren */
+/* Vorder- und Rückseite der Flipcards positionieren */
 .flip-card-inner {
   position: relative;
   width: 100%;
