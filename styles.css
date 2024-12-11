@@ -425,31 +425,6 @@ main {
   background-image: url("img stationen/satellit.jpg");
 }
 
-.stationen_map,
-.stationen_map_hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.stationen_map_hover {
-  opacity: 0;
-  /* Unsichtbar standardmäßig */
-}
-
-.abstellstationen_grafik:hover .stationen_map_hover {
-  opacity: 1;
-  /* Sichtbar bei Hover */
-}
-
-.abstellstationen_grafik:hover .stationen_map {
-  opacity: 0;
-  /* Unsichtbar bei Hover */
-}
-
 #abstellstationen_ende {
   background-color: #9592F0;
   display: flex;
