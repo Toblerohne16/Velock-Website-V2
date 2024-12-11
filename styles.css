@@ -20,7 +20,7 @@ header {
 }
 
 body {
-  background-color: #EFEEF5;
+  background-color: #efeef5;
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Mindestens so hoch wie der Viewport */
@@ -70,7 +70,7 @@ body > section {
 }
 
 .nav_menu a:hover {
-  color: #9592F0;
+  color: #9592f0;
 }
 
 #logo_nav {
@@ -80,7 +80,7 @@ body > section {
 }
 
 article {
-  background-color: #9592F0;
+  background-color: #9592f0;
 }
 
 .video_container {
@@ -111,7 +111,7 @@ video {
 }
 
 main {
-  background-color: #EFEEF5;
+  background-color: #efeef5;
   color: #353547;
   margin: 5% 10% 6% 10%;
   display: flex;
@@ -121,7 +121,6 @@ main {
   align-items: center;
 
   gap: 40px;
-
 }
 
 .start_links,
@@ -134,7 +133,6 @@ main {
   text-align: center;
 
   flex: 1;
-
 }
 
 .start_links img,
@@ -142,13 +140,11 @@ main {
   width: 550px;
 
   height: auto;
-
 }
 
 .start_rechts {
   align-items: center;
   margin-left: 20%;
-
 }
 
 .start_rechts a {
@@ -156,9 +152,7 @@ main {
   width: 350px;
 }
 
-
 .start_links img {
-
   width: 550px;
 }
 
@@ -167,7 +161,7 @@ main {
 }
 
 .start_links button {
-  background-color: #6863F2;
+  background-color: #6863f2;
   color: white;
   margin-top: 30px;
   padding: 20px;
@@ -178,9 +172,9 @@ main {
 
 .start_links button:hover {
   cursor: pointer;
-  color: #6863F2;
-  background-color: #EFEEF5;
-  border: 2px solid #6863F2
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 2px solid #6863f2;
 }
 
 #values {
@@ -195,7 +189,6 @@ main {
 
 #values div {
   flex: 1;
-
 }
 
 #values img {
@@ -216,14 +209,12 @@ main {
   display: block;
   margin-top: 20px;
   color: #353547;
-
 }
 
 #partner {
-  background-color: #9592F0;
+  background-color: #9592f0;
 
   padding: 5%;
-
 }
 
 .partner_img {
@@ -243,7 +234,6 @@ main {
   object-fit: contain;
 
   margin: 10px;
-
 }
 
 .shortcuts {
@@ -256,7 +246,6 @@ main {
 .newsletter img {
   width: 100px;
   margin-bottom: 10%;
-
 }
 
 .login_form {
@@ -266,7 +255,7 @@ main {
 }
 
 .login_form button {
-  background-color: #6863F2;
+  background-color: #6863f2;
   color: white;
   padding: 15px;
   border-radius: 6px;
@@ -276,9 +265,9 @@ main {
 
 .login_form button:hover {
   cursor: pointer;
-  color: #6863F2;
-  background-color: #EFEEF5;
-  border: 1px solid #6863F2
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
 }
 
 #email {
@@ -304,7 +293,6 @@ main {
 .support_alles {
   display: flex;
   justify-content: space-between;
-
 }
 
 .support a,
@@ -324,7 +312,6 @@ main {
   list-style: none;
   align-items: center;
   margin: 0% 2% 0% 2%;
-
 }
 
 .nav_ending a {
@@ -332,7 +319,6 @@ main {
   font-weight: bold;
   color: black;
   gap: 100px;
-
 }
 
 .nav_ending {
@@ -377,7 +363,7 @@ main {
 }
 
 #stationen_container button {
-  background-color: #6863F2;
+  background-color: #6863f2;
   color: white;
   padding: 18px;
   border-radius: 6px;
@@ -389,18 +375,17 @@ main {
 
 #stationen_container button:hover {
   cursor: pointer;
-  color: #6863F2;
-  background-color: #EFEEF5;
-  border: 1px solid #6863F2
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
 }
 
 #abstellstationen_titel {
-  background-color: #9592F0;
+  background-color: #9592f0;
   color: white;
   align-items: center;
   text-align: center;
   padding: 5%;
-
 }
 
 #abstellstationen_grafik {
@@ -413,11 +398,10 @@ main {
   height: auto;
 
   display: block;
-
 }
 
 #abstellstationen_ende {
-  background-color: #9592F0;
+  background-color: #9592f0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -450,7 +434,7 @@ main {
 }
 
 #vision_container button {
-  background-color: #6863F2;
+  background-color: #6863f2;
   color: white;
   padding: 15px;
   border-radius: 6px;
@@ -462,9 +446,9 @@ main {
 
 #vision_container button:hover {
   cursor: pointer;
-  color: #6863F2;
-  background-color: #EFEEF5;
-  border: 1px solid #6863F2
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
 }
 
 #unser_team_container {
@@ -487,29 +471,53 @@ main {
   justify-items: center;
 }
 
-.team_member {
-  background-color: #6e5db6;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  width: 200px;
-  height: auto;
+/* Flipcards */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 0 solid;
 }
 
-.fotos {
-  height: 150px;
+/* Vorder- und Rückseite der Flipcard positionieren */
+.flip-card-inner {
+  position: relative;
   width: 100%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.team_name {
-  font-size: 15px;
-  font-weight: bold;
+/* Horizontaler flip, wenn man mit der Maus über das Bild hovered */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position der Vorder- und Rückseite */
+.flip-card-vorne,
+.flip-card-hinten {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  /* Damit man nicht die Schrift hinter der Karte sieht */
+}
+
+/* Vorderseite Styling */
+.flip-card-vorne {
+  background-color: #6e5db6;
+  color: black;
+}
+
+/* Rückseite der Karte stylen */
+.flip-card-hinten {
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #text_container h1 {
@@ -590,8 +598,7 @@ main {
 
 #unsere_werte_icon_container {
   display: grid;
-  grid-template-columns: repeat(3,
-      1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
 }
@@ -617,19 +624,18 @@ main {
 
 #html_kontakt,
 #body_kontakt {
-  background-color: #EFEEF5;
+  background-color: #efeef5;
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
-#body_kontakt>header {
+#body_kontakt > header {
   flex: 0;
 }
 
-
-#body_kontakt>section {
+#body_kontakt > section {
   flex: 1;
 }
 
@@ -717,7 +723,7 @@ main {
 
   grid-row-end: 6;
 
-  background-color: #6863F2;
+  background-color: #6863f2;
   color: white;
   padding: 15px;
   border-radius: 6px;
@@ -728,9 +734,9 @@ main {
 
 #Button:hover {
   cursor: pointer;
-  color: #6863F2;
-  background-color: #EFEEF5;
-  border: 1px solid #6863F2
+  color: #6863f2;
+  background-color: #efeef5;
+  border: 1px solid #6863f2;
 }
 
 /* === KONTAKT SECTION END === */

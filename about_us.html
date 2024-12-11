@@ -1,230 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
-  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_bar">
+        <ul class="menu_gesamt">
+          <div>
+            <li id="logo_nav">
+              <a href="index.html">
+                <img src="img/logo_Velock_black.svg" alt="logo"
+              /></a>
+            </li>
+          </div>
 
-</head>
+          <div class="nav_menu">
+            <a href="index.html">HOME</a>
+            <li><a href="stationen.html">UNSERE STATIONEN</a></li>
+            <li><a href="about_us.html">ÜBER UNS</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-
-  <!-- Header -->
-  <header>
-    <nav class="nav_bar">
-      <ul class="menu_gesamt">
-        <div>
-          <li id="logo_nav">
-            <a href="index.html">
-              <img src="img/logo_Velock_black.svg" alt="logo" /></a>
-          </li>
-        </div>
-
-        <div class="nav_menu">
-          <a href="index.html">HOME</a>
-          <li><a href="stationen.html">UNSERE STATIONEN</a></li>
-          <li><a href="about_us.html">ÜBER UNS</a></li>
-          <li><a href="kontakt.html">KONTAKT</a></li>
-        </div>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Vision -->
-  <section id="vision_container">
-    <p>Unsere Vision</p>
-    <h1>
-      "We want you to leave your <br />
-      lock at home"
-    </h1>
-    <button><audio controls>
-        <source src="audio/velock jingle.wav" type="audio/wav">
-      </audio></button>
-  </section>
-
-  <!-- Unser Team -->
-  <section id="unser_team_container">
-    <div id="text_container">
+    <!-- Vision -->
+    <section id="vision_container">
+      <p>Unsere Vision</p>
       <h1>
-        Unser <br />
-        Team
+        "We want you to leave your <br />
+        lock at home"
       </h1>
-    </div>
-    <div id="fotos_team">
-      <div class="team_member">
-        <img src="img_about_us/julian.png" alt="Julian" class="fotos" />
-        <p class="team_name">Julian</p>
-      </div>
-      <div class="team_member">
-        <img src="img_about_us/laura.png" alt="Laura" class="fotos" />
-        <p class="team_name">Laura</p>
-      </div>
-      <div class="team_member">
-        <img src="img_about_us/chiara.png" alt="Chiara" class="fotos" />
-        <p class="team_name">Chiara</p>
-      </div>
-      <div class="team_member">
-        <img src="img_about_us/lorena.png" alt="Lorena" class="fotos" />
-        <p class="team_name">Lorena</p>
-      </div>
-      <div class="team_member">
-        <img src="img_about_us/mathis.png" alt="Mathis" class="fotos" />
-        <p class="team_name">Mathis</p>
-      </div>
-      <div class="team_member">
-        <img src="img_about_us/selina.png" alt="Selina" class="fotos" />
-        <p class="team_name">Selina</p>
-      </div>
-    </div>
-  </section>
+      <button>
+        <audio controls>
+          <source src="audio/velock jingle.wav" type="audio/wav" />
+        </audio>
+      </button>
+    </section>
 
-  <!-- Text Container "Das sind wir" -->
-  <section id="das_sind_wir_container">
-    <h1>Das sind wir</h1>
-    <p>
-      Es war ein regnerischer Tag - fast schon neblig, an dem sich Lorena,
-      Laura, Selina, Mathis, Julian und Chiara, die sich noch nicht kannten,
-      am Berner Bahnhof bei den Veloabstellplätzen begegnet sind. Alle suchten
-      auf dem überfüllten Veloabstellplatz nach einem freien Platz, jedoch
-      ohne Erfolg. Durch Zufall kreuzten sich ihre Blicke und die Verzweiflung
-      war ihnen allen ins Gesicht geschrieben. Sie tauschten ihre Kontakte aus
-      mit dem Gedanken, dass sie zusammen an diesem Problem etwas verändern
-      wollen. Mit diesem Aufeinandertreffen wurde der erste Stein für ein
-      erfolgreiches Startup gelegt; Velock.
-    </p>
-  </section>
+    <!-- Unser Team -->
+    <section id="unser_team_container">
+      <div id="text_container">
+        <h1>
+          Unser <br />
+          Team
+        </h1>
+      </div>
+      <div id="fotos_team">
+        <!-- Julian Flipcard -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/julian.png"
+                alt="Julian"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Julian</h1>
+                <p>Technische Entwicklung</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Laura Flipcard -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/laura.png"
+                alt="Laura"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Laura</h1>
+                <p>Human Ressources</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Wie alles begann -->
-  <section id="wie_alles_begann_container">
-    <div id="wie_alles_begann_skizzen">
-      <img src="img_about_us/screenshot.png" alt="Skizzen" />
-    </div>
-    <div id="wie_alles_begann_text">
-      <h1>Wie alles begann</h1>
+        <!--Chiara Flipcard-->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/chiara.png"
+                alt="Chiara"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Chiara</h1>
+                <p>Kooperationen</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lorena Flipcard -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/lorena.png"
+                alt="Lorena"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Lorena</h1>
+                <p>Marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mathis Flipcard -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/mathis.png"
+                alt="Mathis"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Mathis</h1>
+                <p>Entwicklung & Produktion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selina Flipcard -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-vorne">
+              <img
+                src="img_about_us/selina.png"
+                alt="Selina"
+                style="height: 100%"
+              />
+            </div>
+            <div class="flip-card-hinten">
+              <div>
+                <h1>Selina</h1>
+                <p>Entwicklung & Produktion</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Text Container "Das sind wir" -->
+    <section id="das_sind_wir_container">
+      <h1>Das sind wir</h1>
       <p>
-        Text “wie alles begann” Es war ein regnerischer Tag – fast schon
-        neblig, an dem sich Lorena, Laura, Selina, Mathis, Julian und Chiara,
-        die sich noch nicht kannten, am Berner Bahnhof bei den
-        Veloabstellplätzen begegnet sind. Alle suchten auf dem überfüllten
-        Veloabstellplatz nach einem freien Platz, jedoch ohne Erfolg. Durch
-        Zufall kreuzten sich ihre Blicke und die Verzweiflung war ihnen allen
-        ins Gesicht geschrieben. Sie tauschten ihre Kontakte aus mit dem
-        Gedanken, dass sie zusammen an diesem Problem etwas verändern wollen.
-        Mit diesem Aufeinandertreffen wurde der erste Stein für ein
+        Es war ein regnerischer Tag - fast schon neblig, an dem sich Lorena,
+        Laura, Selina, Mathis, Julian und Chiara, die sich noch nicht kannten,
+        am Berner Bahnhof bei den Veloabstellplätzen begegnet sind. Alle suchten
+        auf dem überfüllten Veloabstellplatz nach einem freien Platz, jedoch
+        ohne Erfolg. Durch Zufall kreuzten sich ihre Blicke und die Verzweiflung
+        war ihnen allen ins Gesicht geschrieben. Sie tauschten ihre Kontakte aus
+        mit dem Gedanken, dass sie zusammen an diesem Problem etwas verändern
+        wollen. Mit diesem Aufeinandertreffen wurde der erste Stein für ein
         erfolgreiches Startup gelegt; Velock.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- Container beige - gehört immer noch zu "Wie alles begann" -->
-  <section id="wie_alles_begann_container_beige">
-    <div id="text_prozess">
-      <p>
-        Hier noch Text oder irgendwas dazu wie alles <br />
-        begann, zum Prototyp oder weiss nicht was aber <br />
-        nicht all zu viel da Platz und so aber eigentlich <br />
-        auch egal ich schreibe einfach was ...
-      </p>
-    </div>
-    <div id="container_foto_prozess">
-      <img src="img_about_us/screenshot_prozess.png" alt="Bild des Prozesses" />
-    </div>
-  </section>
-  <!-- Unsere Werte -->
-  <section id="unsere_werte_container">
-    <div id="unsere_werte_titel">
-      <h1>
-        Unsere <br />
-        Werte
-      </h1>
-    </div>
-    <div id="unsere_werte_icon_container">
-      <div class="werte_icon">
-        <img src="img_about_us/sicher_icon.svg" alt="sicher_icon" />
-        <h1>Sicherheit</h1>
+    <!-- Wie alles begann -->
+    <section id="wie_alles_begann_container">
+      <div id="wie_alles_begann_skizzen">
+        <img src="img_about_us/screenshot.png" alt="Skizzen" />
+      </div>
+      <div id="wie_alles_begann_text">
+        <h1>Wie alles begann</h1>
         <p>
-          Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
-          da ist.
+          Text “wie alles begann” Es war ein regnerischer Tag – fast schon
+          neblig, an dem sich Lorena, Laura, Selina, Mathis, Julian und Chiara,
+          die sich noch nicht kannten, am Berner Bahnhof bei den
+          Veloabstellplätzen begegnet sind. Alle suchten auf dem überfüllten
+          Veloabstellplatz nach einem freien Platz, jedoch ohne Erfolg. Durch
+          Zufall kreuzten sich ihre Blicke und die Verzweiflung war ihnen allen
+          ins Gesicht geschrieben. Sie tauschten ihre Kontakte aus mit dem
+          Gedanken, dass sie zusammen an diesem Problem etwas verändern wollen.
+          Mit diesem Aufeinandertreffen wurde der erste Stein für ein
+          erfolgreiches Startup gelegt; Velock.
         </p>
       </div>
-      <div class="werte_icon">
-        <img src="img_about_us/zugaenglich_icon.svg" alt="zugänglich_icon" />
-        <h1>Zugänglichkeit</h1>
+    </section>
+
+    <!-- Container beige - gehört immer noch zu "Wie alles begann" -->
+    <section id="wie_alles_begann_container_beige">
+      <div id="text_prozess">
         <p>
-          Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
-          da ist.
+          Hier noch Text oder irgendwas dazu wie alles <br />
+          begann, zum Prototyp oder weiss nicht was aber <br />
+          nicht all zu viel da Platz und so aber eigentlich <br />
+          auch egal ich schreibe einfach was ...
         </p>
       </div>
-      <div class="werte_icon">
-        <img src="img_about_us/smart_icon.svg" alt="smart_icon" />
-        <h1>Smarte Lösung</h1>
-        <p>
-          Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
-          da ist.
-        </p>
+      <div id="container_foto_prozess">
+        <img
+          src="img_about_us/screenshot_prozess.png"
+          alt="Bild des Prozesses"
+        />
       </div>
-    </div>
-  </section>
-  <!-- Footer Shortcuts -->
-  <footer>
-    <div class="shortcuts">
-      <div class="newsletter">
-        <a>
-          <img src="img_about_us/logo_Velock_black.svg" alt="Velock Logo in Schwarz" href="#" />
-        </a>
-        <a>Hier Newsletter abonnieren</a>
-        <form class="login_form">
-          <input type="email" id="email" name="email" placeholder="E-Mail eingeben" />
-          <br />
-          <button type="submit">Senden</button>
-        </form>
+    </section>
+    <!-- Unsere Werte -->
+    <section id="unsere_werte_container">
+      <div id="unsere_werte_titel">
+        <h1>
+          Unsere <br />
+          Werte
+        </h1>
       </div>
-      <div class="supportüberunsstationen">
-        <ul class="support_alles">
-          <li class="support">
-            <a href="#">Support</a>
-            <ul>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
+      <div id="unsere_werte_icon_container">
+        <div class="werte_icon">
+          <img src="img_about_us/sicher_icon.svg" alt="sicher_icon" />
+          <h1>Sicherheit</h1>
+          <p>
+            Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
+            da ist.
+          </p>
+        </div>
+        <div class="werte_icon">
+          <img src="img_about_us/zugaenglich_icon.svg" alt="zugänglich_icon" />
+          <h1>Zugänglichkeit</h1>
+          <p>
+            Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
+            da ist.
+          </p>
+        </div>
+        <div class="werte_icon">
+          <img src="img_about_us/smart_icon.svg" alt="smart_icon" />
+          <h1>Smarte Lösung</h1>
+          <p>
+            Unser fest installiertes Schloss gibt alles, dass dein Fahrrad noch
+            da ist.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Shortcuts -->
+    <footer>
+      <div class="shortcuts">
+        <div class="newsletter">
+          <a>
+            <img
+              src="img_about_us/logo_Velock_black.svg"
+              alt="Velock Logo in Schwarz"
+              href="#"
+            />
+          </a>
+          <a>Hier Newsletter abonnieren</a>
+          <form class="login_form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-Mail eingeben"
+            />
+            <br />
+            <button type="submit">Senden</button>
+          </form>
+        </div>
+        <div class="supportüberunsstationen">
+          <ul class="support_alles">
+            <li class="support">
+              <a href="#">Support</a>
+              <ul>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </li>
+            <li class="überuns">
+              <a href="#">Über uns</a>
+              <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FHGR</a></li>
+                <li><a href="#">BFH</a></li>
+              </ul>
+            </li>
+            <li class="stationen">
+              <a href="#">Stationen</a>
+              <ul>
+                <li><a href="#">Bern</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Ending -->
+      </div>
+      <nav class="ending">
+        <ul class="menu_ending">
+          <li class="nav_ending">
+            <a href="index.html">©VELOCK2025</a>
+            <a href="#">IMPRESSUM</a>
+            <a href="#">DATENSCHUTZ</a>
+            <a href="#">AGB'S</a>
           </li>
-          <li class="überuns">
-            <a href="#">Über uns</a>
-            <ul>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">FHGR</a></li>
-              <li><a href="#">BFH</a></li>
-            </ul>
-          </li>
-          <li class="stationen">
-            <a href="#">Stationen</a>
-            <ul>
-              <li><a href="#">Bern</a></li>
-            </ul>
+          <li class="socialmedia">
+            <img src="socialmedia/Facebook.svg" alt="Facebook" />
+            <img src="socialmedia/Linkedin.svg" alt="Linkedin" />
+            <img src="socialmedia/Instagram.svg" alt="Instagram" />
+            <img src="socialmedia/Twitter.svg" alt="Twitter" />
           </li>
         </ul>
-      </div>
-
-      <!-- Footer Ending -->
-    </div>
-    <nav class="ending">
-      <ul class="menu_ending">
-        <li class="nav_ending">
-          <a href="index.html">©VELOCK2025</a>
-          <a href="#">IMPRESSUM</a>
-          <a href="#">DATENSCHUTZ</a>
-          <a href="#">AGB'S</a>
-        </li>
-        <li class="socialmedia">
-          <img src="socialmedia/Facebook.svg" alt="Facebook" />
-          <img src="socialmedia/Linkedin.svg" alt="Linkedin" />
-          <img src="socialmedia/Instagram.svg" alt="Instagram" />
-          <img src="socialmedia/Twitter.svg" alt="Twitter" />
-        </li>
-      </ul>
-    </nav>
-  </footer>
-</body>
-
+      </nav>
+    </footer>
+  </body>
 </html>
