@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<!-- Konakt Seite -->
+
+<body>
+    <header>
+        <nav class="nav_bar">
+            <ul class="menu_gesamt">
+                <li id="logo_nav">
+                    <a href="index.html">
+                        <img src="img/logo_Velock_black.svg" alt="Velock Logo in Schwarz">
+                    </a>
+                </li>
+                <li class="nav_menu">
+                    <a href="index.html">HOME</a>
+                    <a href="stationen.html">UNSERE STATIONEN</a>
+                    <a href="about_us.html">ÜBER UNS</a>
+                    <a href="kontakt.html">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Kontaktformular -->
+    <section>
+        <div class="Fragen">
+            <a>
+                Hast du Fragen?
+            </a>
+            <h1>
+                Kontaktiere uns
+            </h1>
+        </div>
+
+        <div class="Kontaktformular">
+            <form action="form.php" method="post">
+                <div class="Eingabefelder">
+                    <!-- <label for="Vorname">Vorname</label> -->
+                    <input id="Vorname" type="text" id="Vorname:" name="Vorname" placeholder="Vorname" required>
+
+                    <!-- <label for="Nachname">Nachname</label> -->
+                    <input id="Nachname" type="text" id="Nachname:" name="Nachname" placeholder="Nachname" required>
+
+                    <!-- <label for="Mailadresse">Mailadresse</label> -->
+                    <input id="Mailadresse" type="text" id="Mailadresse:" name="Mailadresse" placeholder="Mailadresse" required>
+
+                    <!-- <label for="Telefonnummer">Telefonnummer</label> -->
+                    <input id="Telefonnummer" type="text" id="Telefonnummer:" name="Telefonnummer" placeholder="Telefonnummer" required>
+
+                    <!-- <label for="Betreff">Betreff</label> -->
+                    <input id="Betreff" type="text" id="Betreff:" name="Betreff" placeholder="Betreff" required>
+
+                    <!-- <label for="Nachricht">deine Nachricht</label> -->
+                    <textarea id="Nachricht" name="Nachricht" placeholder="Nachricht" required></textarea>
+
+                    <button id="Button">
+                        Senden
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="Fragen">
+            <img src="img/logo Velock.svg" alt="Logo">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav class="ending">
+            <ul class="menu_ending">
+                <li class="nav_ending">
+                    <a href="index.html">©VELOCK2025</a>
+                    <a href="#">IMPRESSUM</a>
+                    <a href="#">DATENSCHUTZ</a>
+                    <a href="#">AGB'S</a>
+                </li>
+                <li class="socialmedia">
+                    <img src="socialmedia/Facebook.svg" alt="Facebook" />
+                    <img src="socialmedia/Linkedin.svg" alt="Linkedin" />
+                    <img src="socialmedia/Instagram.svg" alt="Instagram" />
+                    <img src="socialmedia/Twitter.svg" alt="Twitter" />
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
