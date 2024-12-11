@@ -1,3 +1,16 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #EFEEF5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
 .ending {
   background-color: white;
 }
@@ -19,32 +32,20 @@ header {
   top: 0;
 }
 
-body {
-  background-color: #EFEEF5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  /* Mindestens so hoch wie der Viewport */
-}
+
 
 body>header,
 body>footer {
   flex: 0;
-  /* Header und Footer nehmen nur so viel Platz wie nötig */
 }
 
 body>section {
   flex: 1;
-  /* Hauptinhalt füllt den restlichen Platz */
 }
 
 /* === START SECTION START === */
 
-* {
-  padding: 0px;
-  margin: 0px;
-  font-family: Arial, sans-serif;
-}
+
 
 .menu_gesamt {
   display: flex;
@@ -198,21 +199,20 @@ main {
 
 #values div {
   flex: 1;
+  gap: 20px;
 
 }
 
 #values img {
   width: 80px;
-
   height: 80px;
-
   object-fit: contain;
-
   padding: 10px;
 }
 
 #values h1 {
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 #values a {
@@ -427,15 +427,18 @@ main {
 }
 
 .stationen_map_hover {
-  opacity: 0; /* Unsichtbar standardmäßig */
+  opacity: 0;
+  /* Unsichtbar standardmäßig */
 }
 
 .abstellstationen_grafik:hover .stationen_map_hover {
-  opacity: 1; /* Sichtbar bei Hover */
+  opacity: 1;
+  /* Sichtbar bei Hover */
 }
 
 .abstellstationen_grafik:hover .stationen_map {
-  opacity: 0; /* Unsichtbar bei Hover */
+  opacity: 0;
+  /* Unsichtbar bei Hover */
 }
 
 #abstellstationen_ende {
@@ -645,7 +648,7 @@ main {
 
 .werte_text h1 {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   color: white;
   margin-bottom: 2%;
