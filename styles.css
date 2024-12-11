@@ -423,6 +423,8 @@ main {
   align-items: center;
   text-align: center;
   padding: 5%;
+  font-weight: 300;
+  font-size: 80px;
 
 }
 
