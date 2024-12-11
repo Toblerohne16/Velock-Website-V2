@@ -257,6 +257,13 @@ main {
 
 }
 
+#footer_logo {
+  margin: 0%;
+  width: 250px;
+
+
+}
+
 .login_form {
   display: flex;
   gap: 20px;
@@ -285,12 +292,18 @@ main {
   border: 1px solid;
   border-color: gray;
   padding: 5px;
+  padding-right: 100px;
+
 }
 
 .newsletter {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.newsletter a {
+  width: 250px;
 }
 
 .supportüberunsstationen li {
@@ -305,6 +318,7 @@ main {
   padding-left: 20%;
 }
 
+
 .supportüberunsstationen_überschrift {
   font-weight: 600;
   font-size: large;
@@ -317,6 +331,12 @@ main {
   text-decoration: none;
   text-align: center;
   padding: 5px;
+}
+
+.support a:hover,
+.überuns a:hover,
+.stationen a:hover {
+  text-decoration: underline;
 }
 
 .menu_ending {
