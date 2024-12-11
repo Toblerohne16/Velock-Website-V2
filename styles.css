@@ -23,16 +23,19 @@ body {
   background-color: #EFEEF5;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Mindestens so hoch wie der Viewport */
+  min-height: 100vh;
+  /* Mindestens so hoch wie der Viewport */
 }
 
-body > header,
-body > footer {
-  flex: 0; /* Header und Footer nehmen nur so viel Platz wie nötig */
+body>header,
+body>footer {
+  flex: 0;
+  /* Header und Footer nehmen nur so viel Platz wie nötig */
 }
 
-body > section {
-  flex: 1; /* Hauptinhalt füllt den restlichen Platz */
+body>section {
+  flex: 1;
+  /* Hauptinhalt füllt den restlichen Platz */
 }
 
 /* === START SECTION START === */
@@ -520,13 +523,23 @@ main {
 
 #das_sind_wir_container {
   text-align: center;
-  padding: 5% 33%;
+  padding: 7% 20%;
+}
+
+#das_sind_wir_container h1 {
+  font-weight: lighter;
+  font-size: 80px;
+  margin-bottom: 3%;
+}
+
+#das_sind_wir_container p {
+  font-size: 20px;
 }
 
 #wie_alles_begann_container {
   display: flex;
   align-items: center;
-  padding: 5% 5%;
+  padding-left: 5%;
   background-color: #9592f0;
   gap: 5%;
 }
@@ -537,12 +550,14 @@ main {
 }
 
 #wie_alles_begann_skizzen img {
-  height: 700px;
+  height: 1000px;
+  object-fit: cover;
+  display: block;
 }
 
 #wie_alles_begann_text {
   color: white;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -550,23 +565,32 @@ main {
   font-weight: lighter;
   color: white;
   font-size: 80px;
+  margin-bottom: 3%;
+}
+
+#wie_alles_begann_text p {
+  font-size: 20px;
+  margin-right: 5%;
 }
 
 #wie_alles_begann_container_beige {
   display: flex;
   align-items: center;
-  padding: 5% 5%;
+  padding-left: 5%;
   gap: 5%;
 }
 
-#text_prozess {
-  text-align: center;
-  width: 100%;
+#container_foto_prozess img {
+  height: auto;
+  width: 650px;
+  object-fit: cover;
+  display: block;
 }
 
-#container_foto_prozess {
-  align-items: center;
+#text_prozess {
+  text-align: left;
   width: 100%;
+  font-size: 20px;
 }
 
 #unsere_werte_container {
@@ -574,41 +598,43 @@ main {
   justify-content: space-around;
   align-items: center;
   background-color: #9592f0;
-  padding: 5%;
+  padding: 3%;
   flex-wrap: wrap;
 }
 
 #unsere_werte_titel {
-  flex: 1;
+  text-align: center;
 }
 
 #unsere_werte_titel h1 {
   font-weight: lighter;
   color: white;
   font-size: 80px;
+  text-align: center;
+  margin-bottom: 12%;
 }
 
-#unsere_werte_icon_container {
+#unsere_werte_text_container {
   display: grid;
   grid-template-columns: repeat(3,
       1fr);
-  gap: 40px;
+  /* 1 fraction (= Unterteilung) wird 3 Mal wiederholt */
+  gap: 100px;
+  /* Abstand zwischen den texten */
   justify-items: center;
 }
 
-.werte_icon {
-  padding: 20px;
+.werte_text h1 {
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
   color: white;
-  width: 200px;
-  height: auto;
+  margin-bottom: 2%;
 }
 
-.werte_icon img {
-  max-width: 100px;
-  max-height: 100px;
-  object-fit: contain;
-  margin: 0 auto;
+.werte_text p {
+  color: white;
+  text-align: center;
 }
 
 /* === ABOUT SECTION END === */
