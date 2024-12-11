@@ -24,7 +24,18 @@ header {
 
 body {
   background-color: #EFEEF5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Mindestens so hoch wie der Viewport */
+}
 
+body > header,
+body > footer {
+  flex: 0; /* Header und Footer nehmen nur so viel Platz wie nötig */
+}
+
+body > section {
+  flex: 1; /* Hauptinhalt füllt den restlichen Platz */
 }
 
 /* === START SECTION START === */
