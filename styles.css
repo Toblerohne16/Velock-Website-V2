@@ -423,6 +423,8 @@ main {
 
 .stationen_map:hover {
   background-image: url("img stationen/satellit.jpg");
+}
+
 .stationen_map,
 .stationen_map_hover {
   position: absolute;
