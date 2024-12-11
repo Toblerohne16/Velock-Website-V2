@@ -406,36 +406,23 @@ main {
 
 }
 
-#abstellstationen_grafik {
-  text-align: center;
+.abstellstationen_grafik {
+  position: relative; 
+  width: 100%; 
+  height: 800px; 
 }
 
-.abstellstationen_grafik img {
-  width: 100%;
-  height: auto;
-  position: relative;
+.stationen_map {
+  width: 100%; 
+  height: 100%; 
+  background-image: url("img stationen/map.jpg"); 
+  background-size: cover; 
+  background-position: center;
+  transition: background-image 0.3s ease-in-out; 
 }
 
-.stationen_map,
-.stationen_map_hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.stationen_map_hover {
-  opacity: 0; /* Unsichtbar standardmäßig */
-}
-
-.abstellstationen_grafik:hover .stationen_map_hover {
-  opacity: 1; /* Sichtbar bei Hover */
-}
-
-.abstellstationen_grafik:hover .stationen_map {
-  opacity: 0; /* Unsichtbar bei Hover */
+.stationen_map:hover {
+  background-image: url("img stationen/satellit.jpg");
 }
 
 #abstellstationen_ende {
