@@ -515,60 +515,40 @@ main {
 }
 
 .flip-card {
-
   background-color: transparent;
-
-  width: 300px;
-
+  width: 250px;
   height: 200px;
-
   border: 0 solid;
-
 }
 
 
 /* Um die Karten im Abschnitt "Unser Team" zu positionieren */
 
 .flip-card-inner {
-
   position: relative;
-
   width: 100%;
-
   height: 100%;
-
   text-align: center;
-
   transition: transform 0.8s;
-
   transform-style: preserve-3d;
-
 }
 
 
 /* Horizontaler flip, wenn man mit der Maus über die Karte hovered */
 
 .flip-card:hover .flip-card-inner {
-
   transform: rotateY(180deg);
-
 }
 
 
 /* Positionierung der Vorder- und Rückseite */
 
 .flip-card-vorne,
-
 .flip-card-hinten {
-
   position: absolute;
-
   width: 100%;
-
   height: 100%;
-
   backface-visibility: hidden;
-
 }
 
 /* Damit man nicht die Schrift hinter der Karte sieht */
@@ -577,30 +557,20 @@ main {
 /* Vorderseite Styling */
 
 .flip-card-vorne {
-
   background-color: #6e5db6;
-
   color: black;
-
 }
 
 
 /* Rückseite Styling */
 
 .flip-card-hinten {
-
   background-color: rgba(0, 0, 0, 0.6);
-
   color: white;
-
   transform: rotateY(180deg);
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
 }
 
 
