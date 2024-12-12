@@ -456,6 +456,11 @@ main {
   background-color: #9592F0;
 }
 
+#abstellstationen_ende img {
+  width: 100%;
+  height: auto;
+}
+
 /* === STATIONEN SECTION END === */
 
 /* === ABOUT SECTION START === */
@@ -873,5 +878,6 @@ main {
   color: #6863F2;
   transition: 0.3s ease;
 }
+
 
 /* === KONTAKT DANKE END === */
