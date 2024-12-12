@@ -795,13 +795,9 @@ main {
 
 #Button {
   grid-column-start: 4;
-
   grid-column-end: 5;
-
   grid-row-start: 4;
-
   grid-row-end: 6;
-
   background-color: #6863F2;
   color: white;
   padding: 15px;
@@ -811,6 +807,11 @@ main {
   transform: rotate(90deg);
 }
 
+#Button a {
+  text-decoration: none;
+  color: white;
+}
+
 #Button:hover {
   cursor: pointer;
   color: #6863F2;
@@ -818,4 +819,59 @@ main {
   border: 1px solid #6863F2
 }
 
+#Button:hover a {
+  color: #6863F2;
+  transition: 0.3s ease;
+}
+
 /* === KONTAKT SECTION END === */
+
+/* === KONTAKT DANKE START === */
+
+.kontakt_danke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+  gap: 20px;
+  background-color: #efeef5;
+}
+
+.kontakt_danke h1 {
+  font-size: 40px;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 300;
+}
+
+.kontakt_danke button {
+  background-color: #6863F2;
+  color: white;
+  padding: 18px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.kontakt_danke button a {
+  text-decoration: none;
+  color: white;
+}
+
+.kontakt_danke button:hover {
+  cursor: pointer;
+  color: #6863F2;
+  background-color: #EFEEF5;
+  border: 1px solid #6863F2
+}
+
+.kontakt_danke button:hover a {
+  color: #6863F2;
+  transition: 0.3s ease;
+}
+
+/* === KONTAKT DANKE END === */
