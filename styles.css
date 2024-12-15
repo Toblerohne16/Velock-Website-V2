@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
+  width: fit-content;
 }
 
 .ending {
@@ -636,7 +637,6 @@ main {
 
 #wie_alles_begann_text p {
   font-size: 20px;
-  margin-right: 5%;
 }
 
 #wie_alles_begann_container_beige {
@@ -648,7 +648,7 @@ main {
 
 #container_foto_prozess img {
   height: auto;
-  width: 850px;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -661,10 +661,10 @@ main {
 
 #unsere_werte_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #9592f0;
-  padding: 3%;
+  padding: 5%;
   flex-wrap: wrap;
 }
 
@@ -688,6 +688,7 @@ main {
   gap: 100px;
   /* Abstand zwischen den texten */
   justify-items: center;
+  padding: 10px;
 }
 
 .werte_text h1 {
@@ -884,3 +885,146 @@ main {
 
 
 /* === KONTAKT DANKE END === */
+
+/* === Media Queries Start === */
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+  #wie_alles_begann_container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5%;
+    background-color: #9592f0;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+
+  #wie_alles_begann_text {
+    text-align: center;
+    padding-bottom: 5%;
+  }
+
+  #wie_alles_begann_skizzen {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #text_container h1 {
+    font-weight: lighter;
+    color: white;
+    font-size: 80px;
+    justify-content: center;
+    display: flex;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .nav_menu {
+    gap: 10px;
+  }
+
+  #vision_container h1 {
+    font-size: 1.5rem;
+  }
+
+  #vision_container p {
+    font-size: 1rem;
+  }
+
+  #text_prozess {
+    padding: 0 0 5% 0;
+    text-align: center;
+  }
+
+  #das_sind_wir_container {
+    padding: 5%;
+  }
+
+  #wie_alles_begann_text h1 {
+    font-weight: lighter;
+    color: white;
+    font-size: 80px;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #wie_alles_begann_container_beige {
+    display: block;
+    align-items: center;
+    padding: 5%;
+    gap: 5%;
+  }
+
+  #fotos_team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .shortcuts {
+    display: block;
+    margin: 5%;
+  }
+
+  .newsletter {
+    display: flex;
+    align-items: center;
+  }
+
+  .newsletter a {
+    width: 250px;
+    display: flex;
+  }
+
+  .support_alles {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .supportüberunsstationen {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ending {
+    padding: 5%;
+  }
+
+  .menu_ending {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  #vision_container h1 {
+    font-size: 1.2rem;
+  }
+
+
+  #vision_container p {
+    font-size: 0.9rem;
+  }
+
+
+  #unsere_werte_text_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+}
