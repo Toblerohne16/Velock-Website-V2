@@ -418,6 +418,7 @@ main {
   background-color: #9592f0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   width: 100%;
@@ -929,7 +930,13 @@ main {
   }
 
   /* stationen */
+  .abstellstationen_grafik {
+    height: 400px;
+  }
 
+  #abstellstationen_titel {
+    font-size: 40px;
+  }
 
   /* über uns */
   #vision_container h1 {
