@@ -38,7 +38,7 @@ body > footer {
 }
 
 body > section {
-  flex: 1;
+  flex: 1;  
 }
 
 /* === START SECTION START === */
@@ -325,7 +325,7 @@ main {
   text-decoration: underline;
 }
 
-.menu_ending {
+.menu_ending{
   padding: 2%;
   display: flex;
   justify-content: space-between;
@@ -861,9 +861,7 @@ main {
 /* === KONTAKT DANKE END === */
 
 /* === Media Queries Start === */
-
-/* Media Queries von Chiara */
-
+/* === max-width: 1000px === */
 @media (max-width: 1000px) {
   #wie_alles_begann_container {
     display: flex;
@@ -894,13 +892,46 @@ main {
     justify-content: center;
     display: flex;
   }
+
+  .umweltfreundlich {
+    overflow-wrap: break-word; /* Wort wird am Rand umgebrochen */
+    hyphens: auto; /* Automatische Silbentrennung (falls unterstützt) */
+  }
 }
 
+/* === max-width: 768px === */
 @media (max-width: 768px) {
+  /* header */
   .nav_menu {
+    flex-direction: column;
     gap: 10px;
+    margin: 0;
   }
 
+  /* home */
+  .start_links,
+  .start_rechts {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .video_container {
+    height: 70vh;
+  }
+
+  .video_container video {
+    width: 100%;
+  }
+
+  #values {
+    margin: 5% 20% 5% 20%;
+    gap: 50px;
+  }
+
+  /* stationen */
+
+
+  /* über uns */
   #vision_container h1 {
     font-size: 1.5rem;
   }
@@ -940,19 +971,30 @@ main {
     flex-wrap: wrap;
   }
 
-  .shortcuts {
-    display: block;
-    margin: 5%;
-  }
+  /* kontakt */
 
-  .newsletter {
+
+  /* newsletter & footer */
+  .newsletter a{
+    justify-content: center;
+    width: 250px;
     display: flex;
     align-items: center;
   }
 
-  .newsletter a {
-    width: 250px;
+  .newsletter {
+    margin-bottom: 30px;
     display: flex;
+    align-items: center;
+  }
+
+  .nav_ending{
+    justify-content: center;
+  }
+  
+  .shortcuts {
+    display: block;
+    margin: 5%;
   }
 
   .support_alles {
@@ -979,6 +1021,7 @@ main {
   }
 }
 
+/* === max-width: 480px === */
 @media (max-width: 480px) {
   #vision_container h1 {
     font-size: 1.2rem;
@@ -993,38 +1036,6 @@ main {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
-}
-
-/* Media Queries von Mathis */
-
-/* @media (max-width: 768px) {
-  .menu_gesamt {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav_menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-    align-items: center;
-  }
-} */
-
-@media (max-width: 768px) {
-  .nav_menu {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-  }
-
-  .start_links,
-  .start_rechts {
-    flex-direction: column;
-    margin: 0;
   }
 }
 
