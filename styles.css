@@ -260,10 +260,10 @@ main {
   gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
-.login_form button {
+.login_form button {  
   background-color: #6863f2;
   color: white;
   padding: 15px;
@@ -352,7 +352,7 @@ main {
   gap: 6%;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .socialmedia {
