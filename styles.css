@@ -43,6 +43,7 @@ body > section {
 
 /* === START SECTION START === */
 
+/* MENULEISTE */
 .menu_gesamt {
   display: flex;
   justify-content: space-between;
@@ -81,31 +82,7 @@ body > section {
   align-content: center;
 }
 
-article {
-  background-color: #9592f0;
-}
-
-.video_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 80%;
-  max-height: 60%;
-  overflow: hidden;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  padding: 8%;
-}
-
-video {
-  width: 80%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
+/* ERSTER ABSCHNITT */
 main {
   background-color: #efeef5;
   color: #353547;
@@ -121,11 +98,8 @@ main {
 .start_rechts {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   text-align: center;
-
   flex: 1;
 }
 
@@ -170,6 +144,33 @@ main {
   border: 1px solid #6863f2;
 }
 
+/* VIDEO */
+article {
+  background-color: #9592f0;
+}
+
+.video_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  max-height: 60%;
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 8%;
+}
+
+video {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* VALUES */
 #values {
   display: flex;
   justify-content: space-between;
@@ -204,6 +205,7 @@ main {
   color: #353547;
 }
 
+/* PARTNER */
 #partner {
   background-color: #9592f0;
   padding: 5%;
@@ -223,6 +225,7 @@ main {
   margin: 10px;
 }
 
+/* NEWSLETTER & VERLINKUNGEN */
 .shortcuts {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -245,7 +248,6 @@ main {
   gap: 20px;
   margin-top: 20px;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 
 .login_form button {  
@@ -316,6 +318,7 @@ main {
   text-decoration: underline;
 }
 
+/* FOOTER ENDING */
 .menu_ending{
   padding: 2%;
   display: flex;
@@ -338,7 +341,6 @@ main {
   gap: 6%;
   width: 100%;
   flex-wrap: wrap;
-  /* justify-content: center; */
 }
 
 .socialmedia {
@@ -352,6 +354,7 @@ main {
 
 /* === STATIONEN SECTION START === */
 
+/* STATIONEN ERSTEER ABSCHNITT */
 #stationen_container {
   display: flex;
   flex-direction: column;
@@ -418,6 +421,7 @@ main {
   font-weight: 300;
 }
 
+/* MAP SECTION */
 .abstellstationen_grafik {
   background-color: #9592f0;
   display: flex;
@@ -442,6 +446,7 @@ main {
   background-image: url("img stationen/satellit.jpg");
 }
 
+/* GIF VELO */
 #abstellstationen_ende {
   background-color: #9592f0;
 }
@@ -455,6 +460,7 @@ main {
 
 /* === ABOUT SECTION START === */
 
+/* VISION */
 #vision_container {
   display: flex;
   flex-direction: column;
@@ -489,6 +495,7 @@ main {
   border: 1px solid #6863f2;
 }
 
+/* UNSER TEAM */
 #unser_team_container {
   display: flex;
   justify-content: space-around;
@@ -570,6 +577,7 @@ main {
   justify-content: center;
 }
 
+/* DAS SIND WIR */
 #das_sind_wir_container {
   text-align: center;
   padding: 7% 20%;
@@ -582,6 +590,7 @@ main {
   font-weight: 300;
 }
 
+/* PROTOTYP */
 #wie_alles_begann_container {
   display: flex;
   align-items: center;
@@ -615,6 +624,7 @@ main {
   font-weight: 300;
 }
 
+/* PROZESS (BEIGE) */
 #wie_alles_begann_container_beige {
   display: flex;
   align-items: center;
@@ -634,6 +644,7 @@ main {
   width: 100%;
 }
 
+/* WERTE */
 #unsere_werte_container {
   display: flex;
   justify-content: center;
@@ -682,6 +693,7 @@ main {
 
 /* === KONTAKT SECTION START === */
 
+/* FÜLLT SEITE AUTOMATISCH AUS WENN ZU GROSS */
 #html_kontakt,
 #body_kontakt {
   background-color: #efeef5;
@@ -699,26 +711,12 @@ main {
   flex: 1;
 }
 
-.Eingabefelder input,
-.Eingabefelder textarea {
-  border-radius: 3px;
-  border: solid 1px;
-  border-color: #353547;
-  padding: 10px;
-}
-
+/* TEXT */
 .Fragen {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.Fragen img {
-  width: 200px;
-  height: auto;
-  padding: 0px;
-  margin-bottom: 30px;
 }
 
 .Fragen p {
@@ -731,6 +729,15 @@ main {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 50px;
+}
+
+/* EINGABEFELDER KONTAKTFORMULAR */
+.Eingabefelder input,
+.Eingabefelder textarea {
+  border-radius: 3px;
+  border: solid 1px;
+  border-color: #353547;
+  padding: 10px;
 }
 
 .Eingabefelder {
@@ -806,10 +813,19 @@ main {
   transition: 0.3s ease;
 }
 
+/* VELOCK LOGO */
+.Fragen img {
+  width: 200px;
+  height: auto;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
 /* === KONTAKT SECTION END === */
 
 /* === KONTAKT DANKE START === */
 
+/* TEXT */
 .kontakt_danke {
   display: flex;
   flex-direction: column;
@@ -828,6 +844,7 @@ main {
   font-weight: 300;
 }
 
+/* BUTTON */
 .kontakt_danke button {
   background-color: #6863f2;
   color: white;
@@ -858,8 +875,9 @@ main {
 
 /* === KONTAKT DANKE END === */
 
-/* === Media Queries Start === */
-/* === max-width: 1000px === */
+/* === MEDIA QUERIES START === */
+
+/* === max-width: 1100px === */
 @media (max-width: 1100px){
   .flip-card {
     width: 200px;
@@ -867,17 +885,41 @@ main {
   }
 }
 
-
+/* === 1000PX === */
 @media (max-width: 1000px) {
+  
+  /* FOOTER VALUES & PARTNER */
+  #values{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    grid-template-rows: repeat(2, auto); /* Zwei Zeilen */
+    gap: 30px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .partner_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    justify-items: center;
+    gap: 5%;
+  }
+
+  .partner_img img {
+    width: 50%;
+    object-fit: contain;
+  }
+  
+  /* ÜBER UNS */
   #fotos_team {
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 
-#unser_team_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  #unser_team_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
    
   #wie_alles_begann_container {
     display: flex;
@@ -897,7 +939,6 @@ main {
   #wie_alles_begann_text h1{
     text-align: center;
   }
-
 
   #wie_alles_begann_skizzen {
     align-items: center;
@@ -926,35 +967,12 @@ main {
     text-align: center;
     margin-bottom: 5%;
   }
-
-
-  #values{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
-    grid-template-rows: repeat(2, auto); /* Zwei Zeilen */
-    gap: 30px; /* Abstand zwischen den Items */
-    justify-items: center; /* Zentrieren der Inhalte */
-    text-align: center;
-  }
-
-  .partner_img {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
-    justify-items: center; /* Zentrieren der Inhalte */
-    gap: 5%;
-  }
-
-  .partner_img img {
-    width: 50%;
-    object-fit: contain;
-  }
-
-
 }
 
-/* === max-width: 768px === */
+/* === 768PX === */
 @media (max-width: 768px) {
-  /* header */
+  
+  /* HEADER */
   .nav_menu {
     flex-direction: column;
     gap: 5px;
@@ -968,7 +986,7 @@ main {
     word-break: break-word; 
   }
 
-  /* home */
+  /* HOME */
   .start_links,
   .start_rechts {
     flex-direction: column;
@@ -979,6 +997,7 @@ main {
     width: 100%;
   }
 
+  /* VALUES */
   #values {
     gap: 50px;
   }
@@ -987,7 +1006,7 @@ main {
     font-size: 25px;
   }
 
-  /* stationen */
+  /* STATIONEN */
   #stationen_container_button {
     gap: 2rem;
   }
@@ -1004,7 +1023,7 @@ main {
     font-size: 40px;
   }
 
-  /* über uns */
+  /* ÜBER UNS */
   #vision_container h1 {
     font-size: 1.5rem;
   }
@@ -1012,7 +1031,6 @@ main {
   #vision_container p {
     font-size: 1rem;
   }
-
  
   #vision_container button audio{
     width: 10rem;
@@ -1036,7 +1054,7 @@ main {
     display: grid;
     grid-template-columns: 1fr; /* Eine Spalte */
     grid-template-rows: repeat(4, auto); /* Vier Zeilen */
-    justify-items: center; /* Zentrieren der Inhalte */
+    justify-items: center;
     text-align: center;
     gap: 5%;
   }
@@ -1052,10 +1070,8 @@ main {
   #unsere_werte_titel h1{
     margin-bottom: 0%;
   }
-  /* kontakt */
 
-
-  /* newsletter & footer */
+  /* NEWSLETTER & SHORTCUTS */
   .newsletter a{
     justify-content: center;
     width: 250px;
@@ -1072,10 +1088,6 @@ main {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-  }
-
-  .nav_ending{
-    justify-content: center;
   }
   
   .shortcuts {
@@ -1096,6 +1108,11 @@ main {
     
   }
 
+  /* FOOTER */
+  .nav_ending {
+    justify-content: center;
+  }
+
   .ending {
     padding: 5%;
   }
@@ -1109,8 +1126,10 @@ main {
   }
 }
 
-/* === max-width: 480px === */
+/* === 480PX === */
 @media (max-width: 480px) {
+  
+  /* ALLGEMEIN TEXT */
   p, a{
     font-size: 0.8rem;
   }
@@ -1119,27 +1138,14 @@ main {
     font-size: 1.5rem;
   }
 
+  /* HOME */
   .start_links button {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
   }
   
-  #vision_container h1 {
-    font-size: 1.2rem;
-  }
-
-  #vision_container p {
-    font-size: 0.9rem;
-  }
-
-  #unsere_werte_text_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-
+  /* VALUES */
   #values {
     display: grid;
     grid-template-columns: 1fr; /* Eine Spalte */
@@ -1161,9 +1167,13 @@ main {
     margin-top: 0px;
   }
 
-  #stationen_container button{
-    padding-left: 20px;
-    padding-right: 20px;
+  /* ÜBER UNS */
+  #vision_container h1 {
+    font-size: 1.2rem;
+  }
+
+  #vision_container p {
+    font-size: 0.9rem;
   }
 
   #fotos_team {
@@ -1172,10 +1182,24 @@ main {
     flex-wrap: wrap;
   }
 
-  
+  #unsere_werte_text_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* UNSERE STATIONEN */
+  #stationen_container button{
+    padding-left: 20px;
+    padding-right: 20px;
+  }  
 }
 
+/* === 428PX === */
 @media (max-width: 428px) {
+  
+  /* HOME */
   .login_form {
     display: flex;
     flex-direction: column;
@@ -1184,10 +1208,12 @@ main {
     justify-content: center;
   }
 
+  /* FOOTER SUPPORTÜBERUNSSTATIONEN */
   .support_alles{
     gap: 10%;
   }
 
+  /* KONTAKT */
   .Fragen h1 {
     font-size: 1.5rem;
   }
@@ -1236,11 +1262,10 @@ main {
     transform: rotate(0deg);
   }
 
+  /* KONTAKT DANKE */
   .kontakt_danke h1 {
     font-size: 1.5rem;
-    
   }
-
 }
 
-/* === Media Queries End === */
+/* === MEDIA QUERIES END === */
