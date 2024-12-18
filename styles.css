@@ -659,9 +659,9 @@ main {
 #unsere_werte_text_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 10%;
   justify-items: center;
-  padding: 10px;
+  padding: 5%;
 }
 
 .werte_text h1 {
@@ -721,7 +721,7 @@ main {
   margin-bottom: 30px;
 }
 
-.Fragen a {
+.Fragen p {
   margin-top: 50px;
   font-size: 30px;
 }
@@ -894,6 +894,11 @@ main {
     padding-bottom: 5%;
   }
 
+  #wie_alles_begann_text h1{
+    text-align: center;
+  }
+
+
   #wie_alles_begann_skizzen {
     align-items: center;
     width: 100%;
@@ -901,8 +906,25 @@ main {
     justify-content: center;
   }
 
+  #wie_alles_begann_skizzen img {
+    height: 100%;
+  }
+
   #text_container h1 {
     text-align: center;
+  }
+
+  #wie_alles_begann_container_beige {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+
+  #text_prozess {
+    text-align: center;
+    margin-bottom: 5%;
   }
 
 
@@ -991,9 +1013,9 @@ main {
     font-size: 1rem;
   }
 
-  #text_prozess {
-    padding: 0 0 5% 0;
-    text-align: center;
+ 
+  #vision_container button audio{
+    width: 10rem;
   }
 
   #das_sind_wir_container {
@@ -1010,6 +1032,26 @@ main {
     align-items: center;
   }
 
+  #unsere_werte_text_container {
+    display: grid;
+    grid-template-columns: 1fr; /* Eine Spalte */
+    grid-template-rows: repeat(4, auto); /* Vier Zeilen */
+    justify-items: center; /* Zentrieren der Inhalte */
+    text-align: center;
+    gap: 5%;
+  }
+
+  .werte_text h1 {
+    margin: 0%;
+  }
+
+  .werte_text p {
+    max-width: 25rem;
+  }
+
+  #unsere_werte_titel h1{
+    margin-bottom: 0%;
+  }
   /* kontakt */
 
 
@@ -1144,6 +1186,59 @@ main {
 
   .support_alles{
     gap: 10%;
+  }
+
+  .Fragen h1 {
+    font-size: 1.5rem;
+  }
+  
+  .Fragen p {
+    font-size: 0.8rem;
+  }
+
+  #Vorname {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #Nachname {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #Mailadresse {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #Telefonnummer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #Betreff {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  
+  #Nachricht {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  }
+  
+  #Button {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 11; 
+    transform: rotate(0deg);
+  }
+
+  .kontakt_danke h1 {
+    font-size: 1.5rem;
+    
   }
 
 }
