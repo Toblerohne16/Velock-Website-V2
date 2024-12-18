@@ -78,6 +78,7 @@ body > section {
   width: 100px;
   height: 65px;
   justify-content: left;
+  align-content: center;
 }
 
 article {
@@ -89,24 +90,18 @@ article {
   justify-content: center;
   align-items: center;
   width: 100%;
-
-  height: 100vh;
-
   max-width: 80%;
   max-height: 60%;
   overflow: hidden;
-
   margin: auto;
-
   justify-content: center;
   align-items: center;
+  padding: 8%;
 }
 
 video {
   width: 80%;
-
   height: auto;
-
   display: block;
   border-radius: 10px;
 }
@@ -144,7 +139,7 @@ main {
   margin-left: 20%;
 }
 
-.start_rechts a {
+.start_rechts p {
   margin-top: 20px;
 }
 
@@ -199,11 +194,11 @@ main {
 }
 
 #values h1 {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
-#values a {
+#values p {
   display: block;
   margin-top: 20px;
   color: #353547;
@@ -211,7 +206,6 @@ main {
 
 #partner {
   background-color: #9592f0;
-
   padding: 5%;
 }
 
@@ -224,12 +218,8 @@ main {
 }
 
 .partner_img img {
-  width: 18%;
-
-  height: 120px;
-
+  width: 20%;
   object-fit: contain;
-
   margin: 10px;
 }
 
@@ -237,7 +227,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 2.5%;
+  margin: 5%;
 }
 
 .newsletter img {
@@ -289,7 +279,7 @@ main {
   justify-content: center;
 }
 
-.newsletter a {
+.newsletter p {
   width: 250px;
 }
 
@@ -316,7 +306,8 @@ main {
   color: black;
   text-decoration: none;
   text-align: center;
-  padding: 5px;
+  padding: 5%;
+  white-space: nowrap; /* Kein Zeilenumbruch */
 }
 
 .support a:hover,
@@ -367,12 +358,11 @@ main {
   align-items: center;
   padding: 10%;
   gap: 20px;
-
   background-color: #efeef5;
 }
 
 #stationen_container h1 {
-  font-size: 40px;
+  font-size: 60px;
   text-wrap: wrap;
   text-align: center;
   font-weight: 300;
@@ -380,10 +370,13 @@ main {
 
 #stationen_container_button {
   display: flex;
-  gap: 20%;
+  gap: 5rem;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
+  flex-wrap: wrap;
+  width: 100%;
+  
 }
 
 #stationen_container button {
@@ -395,6 +388,10 @@ main {
   transition: 0.3s ease;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+#abstellstationen_alles{
+  background-color: #9592f0;
 }
 
 #stationen_container button:hover {
@@ -412,6 +409,13 @@ main {
   padding: 5%;
   font-weight: 300;
   font-size: 80px;
+}
+
+#abstellstationen_titel h1 {
+  font-size: 60px;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 300;
 }
 
 .abstellstationen_grafik {
@@ -894,10 +898,28 @@ main {
     display: flex;
   }
 
-  .umweltfreundlich {
-    overflow-wrap: break-word; /* Wort wird am Rand umgebrochen */
-    hyphens: auto; /* Automatische Silbentrennung (falls unterstützt) */
+  #values{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    grid-template-rows: repeat(2, auto); /* Zwei Zeilen */
+    gap: 30px; /* Abstand zwischen den Items */
+    justify-items: center; /* Zentrieren der Inhalte */
+    text-align: center;
   }
+
+  .partner_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    justify-items: center; /* Zentrieren der Inhalte */
+    gap: 5%;
+  }
+
+  .partner_img img {
+    width: 50%;
+    object-fit: contain;
+  }
+
+
 }
 
 /* === max-width: 768px === */
@@ -922,17 +944,12 @@ main {
     flex-direction: column;
     margin: 0;
   }
-  
-  .video_container {
-    height: 70vh;
-  }
 
   .video_container video {
     width: 100%;
   }
 
   #values {
-    margin: 5% 20% 5% 20%;
     gap: 50px;
   }
 
@@ -941,11 +958,19 @@ main {
   }
 
   /* stationen */
+  #stationen_container_button {
+    gap: 2rem;
+  }
+
   .abstellstationen_grafik {
     height: 400px;
   }
 
-  #abstellstationen_titel {
+  #stationen_container h1 {
+    font-size: 40px;
+  }
+
+  #abstellstationen_titel h1 {
     font-size: 40px;
   }
 
@@ -968,10 +993,6 @@ main {
   }
 
   #wie_alles_begann_text h1 {
-    font-weight: lighter;
-    color: white;
-    font-size: 80px;
-    margin-bottom: 3%;
     display: flex;
     justify-content: center;
   }
@@ -979,8 +1000,6 @@ main {
   #wie_alles_begann_container_beige {
     display: block;
     align-items: center;
-    padding: 5%;
-    gap: 5%;
   }
 
   #fotos_team {
@@ -1000,6 +1019,11 @@ main {
     align-items: center;
   }
 
+  .newsletter p {
+    text-align: center;
+    margin-top: 5%;
+  }
+
   .newsletter {
     margin-bottom: 30px;
     display: flex;
@@ -1017,13 +1041,15 @@ main {
 
   .support_alles {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0;
+    gap: 20%;
   }
 
   .supportüberunsstationen {
     display: flex;
     justify-content: center;
+    
   }
 
   .ending {
@@ -1041,6 +1067,20 @@ main {
 
 /* === max-width: 480px === */
 @media (max-width: 480px) {
+  p, a{
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .start_links button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   #vision_container h1 {
     font-size: 1.2rem;
   }
@@ -1055,6 +1095,49 @@ main {
     gap: 10px;
     justify-content: center;
   }
+
+  #values {
+    display: grid;
+    grid-template-columns: 1fr; /* Eine Spalte */
+    grid-template-rows: repeat(4, auto); /* Vier Zeilen */
+    gap: 30px; /* Abstand zwischen den Items */
+    justify-items: center; /* Zentrieren der Inhalte */
+    text-align: center;
+  }
+
+  #values img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  #values p{
+    max-width: 15rem;
+    margin-top: 0px;
+  }
+
+  #stationen_container button{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  
+}
+
+@media (max-width: 428px) {
+  .login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .support_alles{
+    gap: 10%;
+  }
+
 }
 
 /* === Media Queries End === */
