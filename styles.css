@@ -936,6 +936,10 @@ main {
     gap: 50px;
   }
 
+  #values h1 {
+    font-size: 25px;
+  }
+
   /* stationen */
   .abstellstationen_grafik {
     height: 400px;
