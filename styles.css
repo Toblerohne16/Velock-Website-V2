@@ -905,8 +905,15 @@ main {
   /* header */
   .nav_menu {
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin: 0;
+  }
+
+  .nav_menu a {
+    font-size: 0.8rem;
+    max-width: 5rem; 
+    white-space: normal; 
+    word-break: break-word; 
   }
 
   /* home */
