@@ -465,7 +465,7 @@ main {
 }
 
 #vision_container h1 {
-  font-size: 40px;
+  font-size: 60px;
   text-wrap: wrap;
   text-align: center;
   font-weight: 300;
@@ -502,6 +502,14 @@ main {
   flex: 1;
 }
 
+#text_container h1 {
+  font-size: 60px;
+  text-wrap: wrap;
+  text-align: left;
+  font-weight: 300;
+  color: white;
+}
+
 #fotos_team {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -513,7 +521,6 @@ main {
   background-color: transparent;
   width: 250px;
   height: 200px;
-  border: 0 solid;
 }
 
 /* Um die Karten im Abschnitt "Unser Team" zu positionieren */
@@ -563,25 +570,16 @@ main {
   justify-content: center;
 }
 
-#text_container h1 {
-  font-weight: lighter;
-  color: white;
-  font-size: 80px;
-}
-
 #das_sind_wir_container {
   text-align: center;
   padding: 7% 20%;
 }
 
 #das_sind_wir_container h1 {
-  font-weight: lighter;
-  font-size: 80px;
-  margin-bottom: 3%;
-}
-
-#das_sind_wir_container p {
-  font-size: 20px;
+  font-size: 60px;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 300;
 }
 
 #wie_alles_begann_container {
@@ -611,14 +609,10 @@ main {
 }
 
 #wie_alles_begann_text h1 {
-  font-weight: lighter;
-  color: white;
-  font-size: 80px;
-  margin-bottom: 3%;
-}
-
-#wie_alles_begann_text p {
-  font-size: 20px;
+  font-size: 60px;
+  text-wrap: wrap;
+  text-align: left;
+  font-weight: 300;
 }
 
 #wie_alles_begann_container_beige {
@@ -638,7 +632,6 @@ main {
 #text_prozess {
   text-align: left;
   width: 100%;
-  font-size: 20px;
 }
 
 #unsere_werte_container {
@@ -655,25 +648,24 @@ main {
 }
 
 #unsere_werte_titel h1 {
-  font-weight: lighter;
   color: white;
-  font-size: 80px;
   text-align: center;
   margin-bottom: 12%;
+  font-weight: 300;
+  font-size: 60px;
+  text-wrap: wrap;
 }
 
 #unsere_werte_text_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 1 fraction (= Unterteilung) wird 3 Mal wiederholt */
   gap: 100px;
-  /* Abstand zwischen den texten */
   justify-items: center;
   padding: 10px;
 }
 
 .werte_text h1 {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: center;
   color: white;
@@ -681,6 +673,7 @@ main {
 }
 
 .werte_text p {
+  display: block;
   color: white;
   text-align: center;
 }
@@ -867,7 +860,25 @@ main {
 
 /* === Media Queries Start === */
 /* === max-width: 1000px === */
+@media (max-width: 1100px){
+  .flip-card {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+
 @media (max-width: 1000px) {
+  #fotos_team {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#unser_team_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+   
   #wie_alles_begann_container {
     display: flex;
     flex-direction: column-reverse;
@@ -891,12 +902,9 @@ main {
   }
 
   #text_container h1 {
-    font-weight: lighter;
-    color: white;
-    font-size: 80px;
-    justify-content: center;
-    display: flex;
+    text-align: center;
   }
+
 
   #values{
     display: grid;
@@ -1000,12 +1008,6 @@ main {
   #wie_alles_begann_container_beige {
     display: block;
     align-items: center;
-  }
-
-  #fotos_team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   /* kontakt */
@@ -1122,6 +1124,13 @@ main {
     padding-right: 20px;
   }
 
+  #fotos_team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  
 }
 
 @media (max-width: 428px) {
