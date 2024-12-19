@@ -3,6 +3,10 @@
   margin: 0px;
 }
 
+::selection{
+  background-color: #f0b492;
+  }
+
 body {
   background-color: #efeef5;
   padding: 0px;
